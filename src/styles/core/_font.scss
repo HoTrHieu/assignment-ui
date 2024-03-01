@@ -1,0 +1,22 @@
+@import "./var";
+
+@font-face {
+  font-family: 'Inter-regular';
+  src: url($font-path + 'Inter-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter-medium';
+  src: url($font-path + 'Inter-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter-bold';
+  src: url($font-path + 'Inter-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}

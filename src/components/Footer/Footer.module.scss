@@ -1,0 +1,18 @@
+@import "styles/core/var.scss";
+@import "styles/core/mixin";
+@import "styles/core/common";
+
+.container {
+  width: 1280px;
+  padding-left: 160px;
+  background-color: $dark;
+  height: 128px;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding-right: 45px;
+  color: $white;
+  font-size: 11px;
+}

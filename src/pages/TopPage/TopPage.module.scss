@@ -1,0 +1,32 @@
+@import "styles/core/var.scss";
+@import "styles/core/mixin";
+@import "styles/core/common";
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.content {
+
+}
+
+.banner {
+  display: flex;
+  height: 312px;
+ .left {
+  width: 540px;
+  object-fit: cover;
+ }
+ 
+ .right {
+    padding: 12px 53px 0;
+    width: calc(100% - 540px);
+    object-fit: cover;
+    background-color: $darkM;
+ }
+}
+
+.miniMenu {
+  
+}

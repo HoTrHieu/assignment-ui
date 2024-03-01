@@ -1,0 +1,182 @@
+@import "styles/core/var";
+@import "styles/core/mixin";
+
+.errorDateWrap {
+  :global {
+    .mantine-InputWrapper-error {
+      font-size: 14px;
+      color: $errorMessage;
+    }
+
+    .mantine-DatePickerInput-input {
+      border: 1px solid $errorMessage;
+    }
+  }
+}
+
+.errorTimeWrap {
+  :global {
+    .mantine-TimeInput-input {
+      border: 1px solid $errorMessage;
+    }
+  }
+}
+
+.containerModalPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+
+  .copy {
+    color: $white;
+    font-size: 12px;
+    margin-top: 16px;
+
+    @include for_size(miniTablet) {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+.containerModal {
+  width: 373px;
+  background-color: $white;
+  position: relative;
+  margin-top: 50px;
+  border-radius: 10px;
+
+  @include for_size(miniTablet) {
+    width: 700px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    
+    @include for_size(miniTablet) {
+      height: 60px;
+      position: relative;
+    }
+  }
+
+  .onlyHeader {
+    height: 100%;
+  }
+  
+
+  .wrapHeaderContent {
+
+    @include for_size(miniTablet) {
+      
+    }
+  }
+
+  .wrapExit {
+    background-color: $mediumGrey;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: -46px;
+    right: 0;
+    cursor: pointer;
+  
+    @include for_size(miniTablet) {
+      top: 16px;
+      right: 16px;
+    }
+  }
+}
+
+.wrapTabCallModal {
+  @include for_size(miniTablet) {
+    width: 100%;
+  }
+
+  :global {
+    .mantine-Tabs-list {
+      background-color: $grayDark;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      @include for_size(miniTablet) {
+        padding-right: 150px;
+      }
+
+      .mantine-Tabs-tab:first-child {
+        border-top-left-radius: 10px;
+      }
+
+      .mantine-Tabs-tab:last-child {
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+
+  .tabItem {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: calc(100%/4);
+    height: 72px;
+    background-color: $grayDark;
+    border: none;
+    
+    :global {
+      .mantine-Tabs-tabLabel {
+        white-space: pre-line;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 120%;
+        font-family: $fontMedium;
+
+        @include for_size(miniTablet) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    @include for_size(miniTablet) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .active {
+      path {
+        fill: $greenChat;
+      }
+    }
+
+    .wrapIcon {
+      width: 16px;
+      height: 16px;
+    
+      @include for_size(miniTablet) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .tabActive {
+    background-color: $white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  
+    :global {
+      .mantine-Tabs-tabLabel {
+        color: $greenChat;
+      }
+    }
+  }
+}

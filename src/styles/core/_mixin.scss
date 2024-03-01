@@ -1,0 +1,31 @@
+@mixin for_size($size) {
+  @if $size == mobile {
+    @media (min-width: 320px) {
+      @content;
+    }
+  } @else if $size == miniTablet {
+    @media (min-width: 700px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == desktopMedium {
+    @media (min-width: 913px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $size == desktopHD {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else {
+    @media #{$size} {
+      @content;
+    }
+  }
+}

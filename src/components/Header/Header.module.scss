@@ -1,0 +1,32 @@
+@import "styles/core/var.scss";
+@import "styles/core/mixin";
+@import "styles/core/common";
+
+.container {
+  padding: 0 160px;
+  width: 1280px;
+  height: 64px;
+  background-color: $dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapAction {
+  width: 528px;
+  display: flex;
+  justify-content: space-between;
+
+  .action {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 16px;
+
+    span {
+      padding-left: 8px;
+    }
+  }
+}
+
