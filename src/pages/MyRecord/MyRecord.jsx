@@ -1,9 +1,13 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import scss from './MyRecord.module.scss';
 
 const MyRecord = () => {
   return (
-    <div>
-      My Record
+    <div className={scss.container}>
+      <Header/>
+      <Footer/>
     </div>
   );
 };
