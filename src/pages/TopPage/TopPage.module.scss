@@ -28,5 +28,35 @@
 }
 
 .miniMenu {
-  
+  padding: 24px 272px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listFoot {
+  padding: 0 160px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  img {
+    width: 234px;
+    height: 241px;
+    object-fit: cover;
+  }
+}
+
+.wrapBtn {
+  margin: 0 auto;
+  text-align: center;
+  padding: 28px 0 64px 0;
+  .btn {
+    width: 296px;
+    height: 56px;
+    text-align: center;
+    background: $mainGradien;
+    border: 0;
+    border-radius: 5px;
+    color: $white;
+  }
 }
